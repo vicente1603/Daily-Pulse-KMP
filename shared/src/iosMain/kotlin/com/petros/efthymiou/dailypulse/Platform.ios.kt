@@ -1,4 +1,5 @@
 package com.petros.efthymiou.dailypulse
+import platform.Foundation.NSLog
 import platform.UIKit.UIDevice
 import platform.UIKit.UIScreen
 
@@ -13,5 +14,8 @@ actual class Platform(){
         get() = UIScreen.mainScreen.scale.toInt()
 
     actual fun logSystemInfo() {
+        NSLog(
+            "($osName, $osVersion, $deviceModel, $density)"
+        )
     }
 }
