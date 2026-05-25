@@ -1,7 +1,5 @@
-package com.petros.efthymiou.dailypulse.android
+package com.petros.efthymiou.dailypulse.android.screens
 
-import android.icu.text.CaseMap
-import android.widget.Toolbar
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -20,7 +18,7 @@ import com.petros.efthymiou.dailypulse.Platform
 
 @Composable
 
-fun AbountScreen(){
+fun AboutScreen(){
     Column {
         Toolbar()
         ContentView()
